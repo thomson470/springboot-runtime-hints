@@ -1,6 +1,7 @@
 # Springboot RuntimeHints <img height="32" src="https://avatars.githubusercontent.com/u/317776?s=48&v=4" alt="Spring"> <img height="32" src="https://raw.githubusercontent.com/ideahut-apps-team/ideahut-springboot-docs/main/docs/images/logo.png" alt="Ideahut">
 
-Kumpulan RuntimeHints yang diperlukan untuk AOT (Ahead of Time Optimizations) di Spring Native.
+- Kumpulan RuntimeHints yang diperlukan untuk AOT (Ahead of Time Optimizations) di Spring Native.
+- Bisa dicoba di [Springboot 3x Native](https://github.com/thomson470/ideahut-springboot-3x-template-native).
 
 ### Cara 1:
 ``` java
