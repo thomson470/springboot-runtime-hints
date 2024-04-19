@@ -16,6 +16,7 @@ class RuntimeHintsConfig
 			new SpringRuntimeHints().registerHints(hints, loader);
 			new TomcatRuntimeHints().registerHints(hints, loader);
 			new WebMvcRuntimeHints().registerHints(hints, loader);
+			new IdeahutRuntimeHints().registerHints(hints, loader);
 			// Tambah di sini untuk definisi proxies, resources, bundles, & reflections yang diperlukan aplikasi.
 		}
 	}
@@ -28,7 +29,8 @@ class RuntimeHintsConfig
 @ImportRuntimeHints(
 	SpringRuntimeHints.class,
 	TomcatRuntimeHints.class,
-	WebMvcRuntimeHints.class
+	WebMvcRuntimeHints.class,
+	IdeahutRuntimeHints.class
 )
 class RuntimeHintsConfig {
 	
