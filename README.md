@@ -6,15 +6,17 @@
 ### Cara 1:
 ``` java
 @Configuration
-@ImportRuntimeHints(RuntimeHintsConfig.Registrar.class)
+@ImportRuntimeHints(
+	RuntimeHintsConfig.Registrar.class
+)
 class RuntimeHintsConfig 
 	static class Registrar implements RuntimeHintsRegistrar {
 		@Override
 		public void registerHints(RuntimeHints hints, ClassLoader loader) {
 			new SpringRuntimeHints().registerHints(hints, loader);
 			new TomcatRuntimeHints().registerHints(hints, loader);
-			new ValidationRuntimeHints().registerHints(hints, loader);
 			new WebMvcRuntimeHints().registerHints(hints, loader);
+			// Tambah di sini untuk definisi proxies, resources, bundles, & reflections yang diperlukan aplikasi.
 		}
 	}
 }
